@@ -18,7 +18,6 @@ EXPOSE 8000
 # Define environment variable
 ENV MODULE_NAME=app.main
 ENV VARIABLE_NAME=app
-ENV PORT=8000
 
 # Run app.py when the container launches
-CMD ["uvicorn", "app.main:app", "--port", "8000"]
+CMD ["uvicorn", "app.main:app"]
